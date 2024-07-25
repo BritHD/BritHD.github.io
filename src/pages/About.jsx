@@ -29,6 +29,9 @@ function About() {
                 <div className="bg-gray-300 w-max rounded-xl m-1 px-2 py-1">Jupyter Notebook</div>
                 <div className="bg-gray-300 w-max rounded-xl m-1 px-2 py-1">Tailwind Css</div>
                 <div className="bg-gray-300 w-max rounded-xl m-1 px-2 py-1">SocketIO</div>
+                <div className="bg-gray-300 w-max rounded-xl m-1 px-2 py-1">Django</div>
+                <div className="bg-gray-300 w-max rounded-xl m-1 px-2 py-1">SQLite</div>
+                <div className="bg-gray-300 w-max rounded-xl m-1 px-2 py-1">AWS</div>
               </div>
             <p className="font-bold mt-[15px] text-2xl">Programs</p>
               <div className="flex flex-wrap mt-[10px] ">

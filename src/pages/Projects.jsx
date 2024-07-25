@@ -2,6 +2,8 @@ import Shaping from '/Shaping.mp4'
 import Tycoon from '/tycoon.png'
 import Monster from '/monster.png'
 import MonsterHTML from '/monster.html?url'
+import Network from '/network.png'
+import NetworkPDF from '/networkPDF.pdf'
 
 function Projects() {
 
@@ -62,6 +64,27 @@ function Projects() {
           <div className="flex flex-wrap">
             <div className="bg-gray-300 w-max rounded-xl m-1 ml-0 px-2 py-1">Html</div>
             <div className="bg-gray-300 w-max rounded-xl m-1 px-2 py-1">Twine</div>
+          </div>
+        </div>
+      </div>
+      <div className="flex justify-center">
+        <img className='w-1/3 m-5' src={Network} alt="A website with network graphs"/>
+        <div className='w-1/3 m-5'>
+          <p className="font-bold text-4xl my-[20px] text-center" >Networkx on HTML</p>
+          <p>A simple website that you can use to make network graphs. This is made with React, and a backend of Django to use python's Networkx library. This website is deployed using AWS EC2 and S3.
+            You can see the documentation and try it out for yourself below.</p>
+          <br/>
+          <a className='font-bold text-blue-500' href={NetworkPDF}>Documentation PDF</a>
+          <br/>
+          <a className='font-bold text-blue-500' href={'http://networkdemo.s3.us-east-2.amazonaws.com/dist/index.html'}>Network Graph Website</a>
+          <br/>
+          <br/>
+          <div className="flex flex-wrap">
+            <div className="bg-gray-300 w-max rounded-xl m-1 ml-0 px-2 py-1">Html</div>
+            <div className="bg-gray-300 w-max rounded-xl m-1 px-2 py-1">Javascript</div>
+            <div className="bg-gray-300 w-max rounded-xl m-1 px-2 py-1">Django</div>
+            <div className="bg-gray-300 w-max rounded-xl m-1 px-2 py-1">ReactJs</div>
+            <div className="bg-gray-300 w-max rounded-xl m-1 px-2 py-1">AWS</div>
           </div>
         </div>
       </div>
