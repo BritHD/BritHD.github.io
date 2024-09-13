@@ -1,8 +1,8 @@
 function About() {
 
   return (
-    <div className = 'p-[150px]' id="about">
-      <p className="font-bold text-8xl py-[70px] text-center">About Me</p>
+    <div className = 'lg:p-[150px]' id="about">
+      <p className="font-bold py-[70px] text-center text-6xl lg:text-8xl">About Me</p>
       <div className="flex">
         <div className="w-1/2 ml-[50px]">
           <div>
