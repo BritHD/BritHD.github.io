@@ -19,7 +19,9 @@ function About() {
             <p className="font-bold mt-[15px] text-2xl">Tools and FrameWorks</p>
               <div className="flex flex-wrap mt-[10px]">
                 <div className="bg-gray-300 w-max rounded-xl m-1 ml-0 px-2 py-1">ReactJs</div>
+                <div className="bg-gray-300 w-max rounded-xl m-1 px-2 py-1">SpringBoot</div>
                 <div className="bg-gray-300 w-max rounded-xl m-1 px-2 py-1">NodeJs</div>
+                <div className="bg-gray-300 w-max rounded-xl m-1 px-2 py-1">Django</div>
                 <div className="bg-gray-300 w-max rounded-xl m-1 px-2 py-1">Express</div>
                 <div className="bg-gray-300 w-max rounded-xl m-1 px-2 py-1">Git</div>
                 <div className="bg-gray-300 w-max rounded-xl m-1 px-2 py-1">Flask</div>
@@ -29,8 +31,8 @@ function About() {
                 <div className="bg-gray-300 w-max rounded-xl m-1 px-2 py-1">Jupyter Notebook</div>
                 <div className="bg-gray-300 w-max rounded-xl m-1 px-2 py-1">Tailwind Css</div>
                 <div className="bg-gray-300 w-max rounded-xl m-1 px-2 py-1">SocketIO</div>
-                <div className="bg-gray-300 w-max rounded-xl m-1 px-2 py-1">Django</div>
                 <div className="bg-gray-300 w-max rounded-xl m-1 px-2 py-1">SQLite</div>
+                <div className="bg-gray-300 w-max rounded-xl m-1 px-2 py-1">MySQL</div>
                 <div className="bg-gray-300 w-max rounded-xl m-1 px-2 py-1">AWS</div>
               </div>
             <p className="font-bold mt-[15px] text-2xl">Programs</p>
@@ -44,22 +46,39 @@ function About() {
                 <div className="bg-gray-300 w-max rounded-xl m-1 px-2 py-1">Itch.io</div>
                 <div className="bg-gray-300 w-max rounded-xl m-1 px-2 py-1">Visual Studio Code</div>
                 <div className="bg-gray-300 w-max rounded-xl m-1 px-2 py-1">Figma</div>
+                <div className="bg-gray-300 w-max rounded-xl m-1 px-2 py-1">Inkscape</div>
               </div>
           </div>
         </div>
         <div className="">
           <p className="font-bold text-4xl">Work Experience</p>
-          <p className="font-bold text-2xl mt-[10px]">Game Designer Internship - University of Pittsburgh</p>
-          <p className="mt-[10px]">May 2024 - Present</p>
-          <ul className="list-disc list-inside ml-1 mt-[10px]">
-            <li>Worked on making a game based on air traffic with the Magnavox Odyssey home console controller</li>
-            <li>Collaborated with one other person to design the art and game mechanics</li>
-            <li>Was the main designer for the art and game components</li>
-          </ul>
-            <div className="flex flex-wrap items-center mt-[10px]">
-              <div className="bg-gray-300 w-max rounded-xl m-1 px-2 py-1">Adobe Photoshop</div>
-              <div className="bg-gray-300 w-max rounded-xl m-1 px-2 py-1">Procreate</div>
-            </div>
+          <div>
+            <p className="font-bold text-2xl mt-[10px]">Game Designer Internship - University of Pittsburgh</p>
+            <p className="mt-[10px]">May 2024 - Present</p>
+            <ul className="list-disc list-inside ml-1 mt-[10px]">
+              <li>Worked on making a game based on air traffic with the Magnavox Odyssey home console controller</li>
+              <li>Collaborated with one other person to design the art and game mechanics</li>
+              <li>Was the main designer for the art and game components</li>
+            </ul>
+              <div className="flex flex-wrap items-center mt-[10px]">
+                <div className="bg-gray-300 w-max rounded-xl m-1 px-2 py-1">Adobe Photoshop</div>
+                <div className="bg-gray-300 w-max rounded-xl m-1 px-2 py-1">Procreate</div>
+              </div>
+          </div>
+          <div>
+            <p className="font-bold text-2xl mt-[10px]">Java Backend Lead Internship - Shop Online New York</p>
+            <p className="mt-[10px]">August 2024 - Present</p>
+            <ul className="list-disc list-inside ml-1 mt-[10px]">
+              <li>Developed the backend of a shopping website with Java Springboot</li>
+              <li>Made a backend database with MySQL using APIs</li>
+              <li>Lead a team of developers to develop the backend on a timely manner</li>
+            </ul>
+              <div className="flex flex-wrap items-center mt-[10px]">
+                <div className="bg-gray-300 w-max rounded-xl m-1 px-2 py-1">Java</div>
+                <div className="bg-gray-300 w-max rounded-xl m-1 px-2 py-1">Springboot</div>
+                <div className="bg-gray-300 w-max rounded-xl m-1 px-2 py-1">MySQL</div>
+              </div>
+          </div> 
         </div>
       </div>
     </div>
