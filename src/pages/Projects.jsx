@@ -4,6 +4,9 @@ import Monster from '/monster.png'
 import MonsterHTML from '/monster.html?url'
 import Network from '/network.png'
 import NetworkPDF from '/networkPDF.pdf'
+import DrawNetwork from '/drawNetwork.png'
+
+import Skill from "../components/Skill"
 
 function Projects() {
 
@@ -23,9 +26,9 @@ function Projects() {
           <br/>
           <br/>
           <div className="flex flex-wrap">
-            <div className="bg-gray-300 w-max rounded-xl m-1 ml-0 px-2 py-1">Unity</div>
-            <div className="bg-gray-300 w-max rounded-xl m-1 px-2 py-1">C#</div>
-            <div className="bg-gray-300 w-max rounded-xl m-1 px-2 py-1">Itch.io</div>
+            <Skill skill="Unity"/>
+            <Skill skill="C#"/>
+            <Skill skill="Itch.io"/>
           </div>
         </div>
       </div>
@@ -42,16 +45,16 @@ function Projects() {
           <br/>
           <br/>
           <div className="flex flex-wrap">
-            <div className="bg-gray-300 w-max rounded-xl m-1 ml-0 px-2 py-1">ReactJs</div>
-            <div className="bg-gray-300 w-max rounded-xl m-1 px-2 py-1">NodeJs</div>
-            <div className="bg-gray-300 w-max rounded-xl m-1 px-2 py-1">Express</div>
-            <div className="bg-gray-300 w-max rounded-xl m-1 px-2 py-1">SocketIO</div>
-            <div className="bg-gray-300 w-max rounded-xl m-1 px-2 py-1">Javascript</div>
-            <div className="bg-gray-300 w-max rounded-xl m-1 px-2 py-1">Render</div>
+            <Skill skill="ReactJs"/>
+            <Skill skill="NodeJs"/>
+            <Skill skill="Express"/>
+            <Skill skill="SocketIO"/>
+            <Skill skill="Javascript"/>
+            <Skill skill="Render"/>
           </div>
         </div>
       </div>
-      <div className="md:justify-center md:flex">
+      <div className="md:flex md:justify-center">
         <img className='size-full md:w-1/3 m-5' src={Monster} alt="A game with rpg elements"/>
         <div className='md:w-1/3 m-5'>
           <p className="font-bold text-4xl my-[20px] text-center" >Short RPG with Twine</p>
@@ -62,8 +65,8 @@ function Projects() {
           <br/>
           <br/>
           <div className="flex flex-wrap">
-            <div className="bg-gray-300 w-max rounded-xl m-1 ml-0 px-2 py-1">Html</div>
-            <div className="bg-gray-300 w-max rounded-xl m-1 px-2 py-1">Twine</div>
+            <Skill skill="Html"/>
+            <Skill skill="Twine"/>
           </div>
         </div>
       </div>
@@ -71,7 +74,7 @@ function Projects() {
         <img className='size-full md:w-1/3 m-5' src={Network} alt="A website with network graphs"/>
         <div className='md:w-1/3 m-5'>
           <p className="font-bold text-4xl my-[20px] text-center" >Networkx on HTML</p>
-          <p>A simple website that you can use to make network graphs. This is made with React, and a backend of Django to use python's Networkx library. This website is deployed using AWS EC2 and S3.
+          <p>A simple website that you can use to make network graphs. This is made with React, and a backend of Django to use python&apos;s Networkx library. This website is deployed using AWS EC2 and S3.
             You can see the documentation and try it out for yourself below.</p>
           <br/>
           <a className='font-bold text-blue-500' href={NetworkPDF}>Documentation PDF</a>
@@ -80,11 +83,28 @@ function Projects() {
           <br/>
           <br/>
           <div className="flex flex-wrap">
-            <div className="bg-gray-300 w-max rounded-xl m-1 ml-0 px-2 py-1">Html</div>
-            <div className="bg-gray-300 w-max rounded-xl m-1 px-2 py-1">Javascript</div>
-            <div className="bg-gray-300 w-max rounded-xl m-1 px-2 py-1">Django</div>
-            <div className="bg-gray-300 w-max rounded-xl m-1 px-2 py-1">ReactJs</div>
-            <div className="bg-gray-300 w-max rounded-xl m-1 px-2 py-1">AWS</div>
+            <Skill skill="Html"/>
+            <Skill skill="Javascript"/>
+            <Skill skill="Django"/>
+            <Skill skill="ReactJs"/>
+            <Skill skill="AWS"/>
+          </div>
+        </div>
+      </div>
+      <div className="md:flex md:justify-center">
+        <img className='size-full md:w-1/3 m-5' src={DrawNetwork} alt="A website with drawn network graphs you can make"/>
+        <div className='md:w-1/3 m-5'>
+          <p className="font-bold text-4xl my-[20px] text-center" >Draw Networks on the Web</p>
+          <p>A simple website that you can use to draw network graphs yourself. This is made with React, and this website is deployed using Github Pages.
+            You can access the website with the link below.</p>
+          <br/>
+          <a className='font-bold text-blue-500' href={'https://brithd.github.io/DrawNetwork/'}>Drawn Network Website</a>
+          <br/>
+          <br/>
+          <div className="flex flex-wrap">
+            <Skill skill="Html"/>
+            <Skill skill="Javascript"/>
+            <Skill skill="ReactJs"/>
           </div>
         </div>
       </div>
