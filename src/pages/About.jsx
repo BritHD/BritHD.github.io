@@ -11,7 +11,7 @@ function About() {
     <div className='lg:px-[150px]' id="about">
       <p className="font-bold py-[70px] text-center text-6xl lg:text-8xl">About Me</p>
       <div className="flex">
-        <div className="w-1/2 ml-[50px]">
+        <div className="w-1/2 mx-[50px]">
           <div>
             <p className="font-bold text-4xl mb-[10px]">Skills</p>
             <p className="font-bold text-2xl">Programing Languages</p>
