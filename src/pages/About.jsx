@@ -1,9 +1,9 @@
 import Skill from "../components/Skill"
 
 function About() {
-  const languages = ["Java", "Javascript", "TypeScript", "Python", "HTML/CSS", "C#", "SQL"]
-  const frameworks = ["React", "Flutter", "Flask", "Dash", "Tkinter", "Jupyter Notebook", "Tailwind", "Django", "Spring Boot", "React Native"]
-  const tools = ["Node", "Express", "Render", "AWS", "CircleCi", "Git", "SocketIO", "MySQL", "SQLite", "PostgreSQL", "Render", "Google Firebase"]
+  const languages = ["Java", "Javascript", "TypeScript", "Python", "HTML/CSS", "C#", "C++", "SQL", "Swift", "JSON"]
+  const frameworks = ["React", "Flutter", "Flask", "Dash", "Tkinter", "Jupyter Notebook", "Tailwind", "Django", "Spring Boot", "React Native", "Wordpress"]
+  const tools = ["Node", "Express", "Render", "AWS", "CircleCi", "Git", "SocketIO", "MySQL", "SQLite", "PostgreSQL", "Render", "Google Firebase", "REST"]
   const programs = ["iMovie", "Adobe Premiere Pro", "Adobe Photoshop", "Procreate", "Unity", "Twine", "Visual Studio Code", "Figma", "Inkscape", "Trello", "Jira", "TinkerCad", "Blender"]
 
 
@@ -35,18 +35,42 @@ function About() {
         <div className="">
           <p className="font-bold text-4xl">Work Experience</p>
           <div>
-            <p className="font-bold text-2xl mt-[10px]">UI/UX & Full Stack Developer Internship - Campus Collect</p>
+            <p className="font-bold text-2xl mt-[10px]">Digital Communications Manager - Community Liver Alliance</p>
+            <p className="mt-[10px]">March 2025 - Present</p>
+            <ul className="list-disc list-inside ml-1 mt-[10px]">
+              <li>Worked on maintaining the Wordpress site and designing with Figma</li>
+              <li>Solve any technical engineering problems</li>
+              <li>Design themes and webpages for new events and content throughout the year</li>
+            </ul>
+            <div className="flex flex-wrap items-center mt-[10px]">
+              <Skill skill="Wordpress" />
+              <Skill skill="Figma" />
+              <Skill skill="HTML" /> 
+            </div>
+          </div>
+          <div>
+            <div className="flex items-center gap-2 mt-[10px]">
+              <p className="font-bold text-2xl">
+                UI/UX & Full Stack Developer Internship - Campus Collect
+              </p>
+              <a
+                href="https://apps.apple.com/us/app/campus-collect/id6739402982"
+                className="text-blue-500 hover:underline text-2xl"
+              >
+                (Link)
+              </a>
+            </div>
             <p className="mt-[10px]">September 2024 - Present</p>
             <ul className="list-disc list-inside ml-1 mt-[10px]">
-              <li>Worked on developing a student marketplace mobile application</li>
+              <li>Worked on launching a student marketplace mobile application to the App Store</li>
               <li>Designed a UI for the of the application with Figma</li>
               <li>Developed the user experience and interaction of the product</li>
               <li>
-                Managed and developed the fullstack tech of the mobile application with React Native
-                and Google Firebase
+                Managed and developed the fullstack tech of the mobile application with React Native,
+                Google Firebase, and Expo
               </li>
-              <li>Launched the application onto the App Store</li>
-              <li>Collaborated with team members to design a consistent theme and experience</li>
+              <li>Lead a team of developers to design and engineer the application</li>
+              <li>Managed project roadmaps and workflow for smooth development</li>
             </ul>
             <div className="flex flex-wrap items-center mt-[10px]">
               <Skill skill="Google Firebase" />
@@ -56,7 +80,7 @@ function About() {
           </div>
           <div>
             <p className="font-bold text-2xl mt-[10px]">Director of Development Internship - Shop Online New York</p>
-            <p className="mt-[10px]">August 2024 - Present</p>
+            <p className="mt-[10px]">August 2024 - March 2025</p>
             <ul className="list-disc list-inside ml-1 mt-[10px]">
               <li>Developed the backend of a shopping website with Java SpringBoot</li>
               <li>Made a backend database with MySQL using APIs</li>
@@ -81,7 +105,7 @@ function About() {
           </div>
           <div>
             <p className="font-bold text-2xl mt-[10px]">Game Development Internship - University of Pittsburgh</p>
-            <p className="mt-[10px]">May 2024 - Present</p>
+            <p className="mt-[10px]">May 2024 - April 2025</p>
             <ul className="list-disc list-inside ml-1 mt-[10px]">
               <li>Designed and tested a game based on air traffic with the Magnavox Odyssey home console controller</li>
               <li>Collaborated with a team to design the art and game mechanics</li>
