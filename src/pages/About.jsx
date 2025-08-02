@@ -34,21 +34,7 @@ function About() {
         </div>
         <div className="">
           <p className="font-bold text-4xl">Work Experience</p>
-          <div>
-            <p className="font-bold text-2xl mt-[10px]">Digital Communications Manager - Community Liver Alliance</p>
-            <p className="mt-[10px]">March 2025 - Present</p>
-            <ul className="list-disc list-inside ml-1 mt-[10px]">
-              <li>Worked on maintaining the Wordpress site and designing with Figma</li>
-              <li>Solve any technical engineering problems</li>
-              <li>Design themes and webpages for new events and content throughout the year</li>
-            </ul>
-            <div className="flex flex-wrap items-center mt-[10px]">
-              <Skill skill="Wordpress" />
-              <Skill skill="Figma" />
-              <Skill skill="HTML" /> 
-            </div>
-          </div>
-          <div>
+                    <div>
             <div className="flex items-center gap-2 mt-[10px]">
               <p className="font-bold text-2xl">
                 UI/UX & Full Stack Developer Internship - Campus Collect
@@ -76,6 +62,20 @@ function About() {
               <Skill skill="Google Firebase" />
               <Skill skill="React Native" />
               <Skill skill="Figma" />
+            </div>
+          </div>
+          <div>
+            <p className="font-bold text-2xl mt-[10px]">Digital Communications Manager - Community Liver Alliance</p>
+            <p className="mt-[10px]">March 2025 - July 2025</p>
+            <ul className="list-disc list-inside ml-1 mt-[10px]">
+              <li>Worked on maintaining the Wordpress site and designing with Figma</li>
+              <li>Solve any technical engineering problems</li>
+              <li>Design themes and webpages for new events and content throughout the year</li>
+            </ul>
+            <div className="flex flex-wrap items-center mt-[10px]">
+              <Skill skill="Wordpress" />
+              <Skill skill="Figma" />
+              <Skill skill="HTML" /> 
             </div>
           </div>
           <div>
