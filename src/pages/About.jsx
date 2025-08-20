@@ -46,7 +46,7 @@ function About() {
                 (Link)
               </a>
             </div>
-            <p className="mt-[10px]">September 2024 - Present</p>
+            <p className="mt-[10px]">September 2024 - July 2025</p>
             <ul className="list-disc list-inside ml-1 mt-[10px]">
               <li>Worked on launching a student marketplace mobile application to the App Store</li>
               <li>Designed a UI for the of the application with Figma</li>
