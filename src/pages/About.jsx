@@ -3,7 +3,7 @@ import Skill from "../components/Skill"
 function About() {
   const languages = ["Java", "Javascript", "TypeScript", "Python", "HTML/CSS", "C#", "C++", "SQL", "Swift", "JSON"]
   const frameworks = ["React", "Flutter", "Flask", "Dash", "Tkinter", "Jupyter Notebook", "Tailwind", "Django", "Spring Boot", "React Native", "Wordpress"]
-  const tools = ["Node", "Express", "Render", "AWS", "CircleCi", "Git", "SocketIO", "MySQL", "SQLite", "PostgreSQL", "Render", "Google Firebase", "REST"]
+  const tools = ["Node", "Express", "Render", "AWS", "CircleCi", "Git", "SocketIO", "MySQL", "SQLite", "PostgreSQL", "Render", "Google Firebase", "REST", "Vercel", "API", "Requests", "Selenium"]
   const programs = ["iMovie", "Adobe Premiere Pro", "Adobe Photoshop", "Procreate", "Unity", "Twine", "Visual Studio Code", "Figma", "Inkscape", "Trello", "Jira", "TinkerCad", "Blender"]
 
 
@@ -34,19 +34,19 @@ function About() {
         </div>
         <div className="">
           <p className="font-bold text-4xl">Work Experience</p>
-                    <div>
+          <div>
             <div className="flex items-center gap-2 mt-[10px]">
               <p className="font-bold text-2xl">
-                UI/UX & Full Stack Developer Internship - Campus Collect
+                UI/UX & Full Stack Developer Internship - Campus Collect&nbsp;
+                <a
+                  href="https://apps.apple.com/us/app/campus-collect/id6739402982"
+                  className="text-blue-500 hover:underline text-2xl"
+                >
+                  (Link)
+                </a>
               </p>
-              <a
-                href="https://apps.apple.com/us/app/campus-collect/id6739402982"
-                className="text-blue-500 hover:underline text-2xl"
-              >
-                (Link)
-              </a>
             </div>
-            <p className="mt-[10px]">September 2024 - July 2025</p>
+            <p className="mt-[10px]">September 2024 - Current</p>
             <ul className="list-disc list-inside ml-1 mt-[10px]">
               <li>Worked on launching a student marketplace mobile application to the App Store</li>
               <li>Designed a UI for the of the application with Figma</li>
@@ -75,7 +75,7 @@ function About() {
             <div className="flex flex-wrap items-center mt-[10px]">
               <Skill skill="Wordpress" />
               <Skill skill="Figma" />
-              <Skill skill="HTML" /> 
+              <Skill skill="HTML" />
             </div>
           </div>
           <div>
