@@ -76,13 +76,13 @@ function Projects() {
         <img className='size-full md:w-1/3 m-5' src={Network} alt="A website with network graphs" />
         <div className='md:w-1/3 m-5'>
           <p className="font-bold text-4xl my-[20px] text-center" >Networkx on HTML</p>
-          <p>A simple website that you can use to make network graphs. This is made with React, and a backend of Django to use python&apos;s Networkx library. This website is deployed using AWS EC2 and S3.
-            You can see the documentation and try it out for yourself below.</p>
+          <p>A simple website that you can use to make network graphs. This is made with React, and a backend of Django to use python&apos;s Networkx library. This website was formerly deployed using AWS EC2 and S3.
+            This is not hosted anymore due to AWS costs, but you can still view the document on the process.</p>
           <br />
           <a className='font-bold text-blue-500' href={NetworkPDF}>Documentation PDF</a>
           <br />
-          <a className='font-bold text-blue-500' href={'http://networkdemo.s3.us-east-2.amazonaws.com/dist/index.html'}>Network Graph Website</a>
-          <br />
+          {/* <a className='font-bold text-blue-500' href={'http://networkdemo.s3.us-east-2.amazonaws.com/dist/index.html'}>Network Graph Website</a>
+          <br /> */}
           <br />
           <div className="flex flex-wrap">
             <Skill skill="Html" />
