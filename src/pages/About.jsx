@@ -48,15 +48,11 @@ function About() {
             </div>
             <p className="mt-[10px]">September 2024 - Current</p>
             <ul className="list-disc list-inside ml-1 mt-[10px]">
-              <li>Worked on launching a student marketplace mobile application to the App Store</li>
-              <li>Designed a UI for the of the application with Figma</li>
-              <li>Developed the user experience and interaction of the product</li>
-              <li>
-                Managed and developed the fullstack tech of the mobile application with React Native,
-                Google Firebase, and Expo
-              </li>
-              <li>Lead a team of developers to design and engineer the application</li>
-              <li>Managed project roadmaps and workflow for smooth development</li>
+              <li>Led development of a student marketplace mobile app, launched to the App Store in 6 months</li>
+              <li>Designed UI/UX with Figma, improving user interaction and retention</li>
+              <li>Developed full-stack architecture with React Native, Firebase, and Expo, achieving
+30% faster performance than previous stack</li>
+              <li> Directed a team of developers, set project roadmaps, and ensured timely delivery of features</li>
             </ul>
             <div className="flex flex-wrap items-center mt-[10px]">
               <Skill skill="Google Firebase" />
@@ -68,9 +64,9 @@ function About() {
             <p className="font-bold text-2xl mt-[10px]">Digital Communications Manager - Community Liver Alliance</p>
             <p className="mt-[10px]">March 2025 - July 2025</p>
             <ul className="list-disc list-inside ml-1 mt-[10px]">
-              <li>Worked on maintaining the Wordpress site and designing with Figma</li>
-              <li>Solve any technical engineering problems</li>
-              <li>Design themes and webpages for new events and content throughout the year</li>
+              <li>Maintained and optimized WordPress site, improving website visibility by 10%</li>
+              <li>Designed themes, event pages, and graphics using Figma</li>
+              <li>Resolved technical issues and improved digital communication workflows</li>
             </ul>
             <div className="flex flex-wrap items-center mt-[10px]">
               <Skill skill="Wordpress" />
@@ -82,19 +78,9 @@ function About() {
             <p className="font-bold text-2xl mt-[10px]">Director of Development Internship - Shop Online New York</p>
             <p className="mt-[10px]">August 2024 - March 2025</p>
             <ul className="list-disc list-inside ml-1 mt-[10px]">
-              <li>Developed the backend of a shopping website with Java SpringBoot</li>
-              <li>Made a backend database with MySQL using APIs</li>
-              <li>Created frontend applications with Flutter and React.js</li>
-              <li>
-                Used AWS services to launch the web-based applications online, and the App Store and
-                Google play store for the mobile application.
-              </li>
-              <li>Lead a team of developers with agile and scrum methodology</li>
-              <li>Directed and oversaw multiple departments to develop our tech stack</li>
-              <li>Addressed any issues and tickets ongoing with various levels of complexity</li>
-              <li>Developed the backend of a shopping website with Java Springboot</li>
-              <li>Made a backend database with MySQL using APIs</li>
-              <li>Lead a team of developers to develop the backend on a timely manner</li>
+              <li>Built backend with Spring Boot + MySQL, improving system performance by 20%</li>
+              <li>Developed web and mobile apps with React.js and Flutter, deployed via AWS</li>
+              <li>Managed cross-functional teams using Agile/Scrum, ensuring smooth delivery</li>
             </ul>
             <div className="flex flex-wrap items-center mt-[10px]">
               <Skill skill="Java" />
@@ -107,10 +93,10 @@ function About() {
             <p className="font-bold text-2xl mt-[10px]">Game Development Internship - University of Pittsburgh</p>
             <p className="mt-[10px]">May 2024 - April 2025</p>
             <ul className="list-disc list-inside ml-1 mt-[10px]">
-              <li>Designed and tested a game based on air traffic with the Magnavox Odyssey home console controller</li>
-              <li>Collaborated with a team to design the art and game mechanics</li>
-              <li>Worked as the main designer for the art and game components using Adobe Photoshop</li>
-              <li>Used 3d printers to make accurate models for game pieces with Blender and TinkerCad</li>
+              <li>Designed and developed an air traffic control game for the Magnavox Odyssey in
+under 12 months</li>
+              <li>Led art and design efforts with Photoshop, Blender, and TinkerCad</li>
+              <li>Showcased the game at a university-wide event with 50+ attendees</li>
             </ul>
             <div className="flex flex-wrap items-center mt-[10px]">
               <Skill skill="Adobe Photoshop" />

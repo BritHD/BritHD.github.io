@@ -44,6 +44,10 @@ function Projects() {
           <br />
           <a className='font-bold text-blue-500' href="https://tycoon2player.onrender.com/">Tycoon!</a>
           <br />
+          <a className='font-bold text-blue-500' href="https://github.com/BritHD/Card-Client/">Frontend Source Code</a>
+          <br />
+          <a className='font-bold text-blue-500' href="https://github.com/BritHD/Card-Server/">Backend Source Code</a>
+          <br />
           <br />
           <div className="flex flex-wrap">
             <Skill skill="ReactJs" />
@@ -81,13 +85,16 @@ function Projects() {
           <br />
           <a className='font-bold text-blue-500' href={NetworkPDF}>Documentation PDF</a>
           <br />
-          {/* <a className='font-bold text-blue-500' href={'http://networkdemo.s3.us-east-2.amazonaws.com/dist/index.html'}>Network Graph Website</a>
-          <br /> */}
+          <a className='font-bold text-blue-500' href="https://github.com/BritHD/NetworkFront">Frontend Source Code</a>
+          <br />
+          <a className='font-bold text-blue-500' href="https://github.com/BritHD/NetworkServer">Backend Source Code</a>
+          <br />
           <br />
           <div className="flex flex-wrap">
             <Skill skill="Html" />
             <Skill skill="Javascript" />
             <Skill skill="Django" />
+            <Skill skill="Python" />
             <Skill skill="ReactJs" />
             <Skill skill="AWS" />
           </div>
@@ -101,6 +108,8 @@ function Projects() {
             You can access the website with the link below.</p>
           <br />
           <a className='font-bold text-blue-500' href={'https://brithd.github.io/DrawNetwork/'}>Drawn Network Website</a>
+          <br />
+          <a className='font-bold text-blue-500' href={'https://github.com/BritHD/DrawNetwork'}>Website Source Code</a>
           <br />
           <br />
           <div className="flex flex-wrap">
