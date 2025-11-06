@@ -5,7 +5,6 @@ import MonsterHTML from '/monster.html?url'
 import Network from '/network.png'
 import NetworkPDF from '/networkPDF.pdf'
 import DrawNetwork from '/drawNetwork.png'
-import PlayPokemon from '/PlayPokemon.png'
 
 import Skill from "../components/Skill"
 
@@ -116,27 +115,6 @@ function Projects() {
             <Skill skill="Html" />
             <Skill skill="Javascript" />
             <Skill skill="ReactJs" />
-          </div>
-        </div>
-      </div>
-      <div className="md:flex md:justify-center">
-        <img className='size-full md:w-1/3 m-5' src={PlayPokemon} alt="A website that looks for play pokemon events based on zip code" />
-        <div className='md:w-1/3 m-5'>
-          <p className="font-bold text-4xl my-[20px] text-center" >Play Pokemon Event Finder</p>
-          <p>A simple website that shows you any local play pokemon events by zipcode and lists them by date! This uses Pokemon&apos;s backend api with a python flask backend and react frontend, deployed using Vercel.</p>
-          <br />
-          <p>Due to Vercel&apos;s hobby tier, the backend server may fail due to excessive use. This website may also be taken down when Pokemon&apos;s own event finder lists the events by store and searched by zip code themselves.</p>
-          <br />
-          <a className='font-bold text-blue-500' href={'https://play-pokemon-event-finder.vercel.app'}>Play Pokemon Event Finder Website</a>
-          <br />
-          <br />
-          <div className="flex flex-wrap">
-            <Skill skill="Html" />
-            <Skill skill="Javascript" />
-            <Skill skill="ReactJs" />
-            <Skill skill="Flask" />
-            <Skill skill="Vercel" />
-            <Skill skill="API" />
           </div>
         </div>
       </div>
