@@ -1,125 +1,132 @@
-import Shaping from '/Shaping.mp4'
-import Tycoon from '/tycoon.png'
-import Monster from '/monster.png'
-import MonsterHTML from '/monster.html?url'
-import Network from '/network.png'
-import NetworkPDF from '/networkPDF.pdf'
-import DrawNetwork from '/drawNetwork.png'
-
 import Skill from "../components/Skill"
 
-function Projects() {
+import Shaping from "/Shaping.mp4";
+import Tycoon from "/tycoon.png";
+import Monster from "/monster.png";
+import MonsterHTML from "/monster.html?url";
+import Network from "/network.png";
+import NetworkPDF from "/networkPDF.pdf";
+import DrawNetwork from "/drawNetwork.png";
 
+const projects = [
+  {
+    title: "Shape Unity Game",
+    description:
+      "A short platforming game about shapes made in Unity. You can play a prototype version via the link below.",
+    media: { type: "video", src: Shaping },
+    skills: ["Unity", "C#", "Itch.io"],
+    links: [{ label: "Shaping!", href: "https://vdstudio.itch.io/shape" }],
+  },
+  {
+    title: "Multiplayer Card Game",
+    description:
+      "A multiplayer card game in React.js with a Node.js backend and Socket.io. Based on Persona 5 Royal.",
+    media: { type: "image", src: Tycoon },
+    skills: ["ReactJs", "NodeJs", "Express", "SocketIO", "Javascript", "Render", "API"],
+    links: [
+      { label: "Tycoon!", href: "https://tycoon2player.onrender.com/" },
+      { label: "Frontend Source Code", href: "https://github.com/BritHD/Card-Client/" },
+      { label: "Backend Source Code", href: "https://github.com/BritHD/Card-Server/" },
+    ],
+  },
+  {
+    title: "Short RPG with Twine",
+    description:
+      "A Twine project with choice-based gameplay and puzzle-like RPG mechanics.",
+    media: { type: "image", src: Monster },
+    skills: ["HTML", "Twine"],
+    links: [{ label: "A World With Monsters", href: MonsterHTML }],
+  },
+  {
+    title: "Networkx on HTML",
+    description:
+      "A React + Django website for creating network graphs. Documentation included as PDF.",
+    media: { type: "image", src: Network },
+    skills: ["HTML", "Javascript", "Django", "Python", "ReactJs", "AWS"],
+    links: [
+      { label: "Documentation PDF", href: NetworkPDF },
+      { label: "Frontend Source Code", href: "https://github.com/BritHD/NetworkFront" },
+      { label: "Backend Source Code", href: "https://github.com/BritHD/NetworkServer" },
+    ],
+  },
+  {
+    title: "Draw Networks on the Web",
+    description:
+      "Draw network graphs interactively on the web. Hosted via GitHub Pages.",
+    media: { type: "image", src: DrawNetwork },
+    skills: ["HTML", "Javascript", "ReactJs"],
+    links: [
+      { label: "Drawn Network Website", href: "https://brithd.github.io/DrawNetwork/" },
+      { label: "Website Source Code", href: "https://github.com/BritHD/DrawNetwork" },
+    ],
+  },
+];
+
+function ProjectCard({ project }) {
   return (
-    <div id='projects'>
-      <p className="font-bold text-8xl py-[100px] text-center">Projects</p>
-      <div className="md:flex md:justify-center">
-        <video className='md:w-1/3 m-5' controls>
-          <source src={Shaping} type="video/mp4" alt='A game with shapes' />
+    <div className="bg-white shadow-md rounded-xl p-6 flex flex-col md:flex-row gap-6">
+      {/* Media */}
+      {project.media.type === "video" ? (
+        <video className="md:w-1/3 rounded" controls>
+          <source src={project.media.src} type="video/mp4" />
         </video>
-        <div className='md:w-1/3 m-5'>
-          <p className="font-bold text-4xl my-[20px] text-center" >Shape Unity Game</p>
-          <p>A video of a small prototype unity game I made. It is a short platforming game about shapes.
-            You can play a prototype version of it in the link below.</p>
-          <br />
-          <a className='font-bold text-blue-500' href="https://vdstudio.itch.io/shape">Shaping!</a>
-          <br />
-          <br />
-          <div className="flex flex-wrap">
-            <Skill skill="Unity" />
-            <Skill skill="C#" />
-            <Skill skill="Itch.io" />
-          </div>
+      ) : (
+        <img
+          className="md:w-1/3 rounded object-cover"
+          src={project.media.src}
+          alt={project.title}
+        />
+      )}
+
+      {/* Details */}
+      <div className="flex-1 flex flex-col gap-4">
+        <h3 className="text-2xl font-bold">{project.title}</h3>
+        <p className="text-gray-700">{project.description}</p>
+
+        <div className="flex flex-wrap gap-2">
+          {project.skills.map((skill) => (
+            <Skill key={skill} skill={skill} />
+          ))}
         </div>
-      </div>
-      <div className="md:flex md:justify-center">
-        <img className='size-full md:w-1/3 m-5' src={Tycoon} alt="A game with cards" />
-        <div className='md:w-1/3 m-5'>
-          <p className="font-bold text-4xl my-[20px] text-center" >Multiplayer Card Game</p>
-          <p>A multiplayer card game I made in ReactJs that uses servers to play a card game with multiplayer!
-            This card game based on the game Persona 5 Royal, and you can play it in the link below.</p>
-          <br />
-          <p>Note that render.com backend servers may take up to 50 seconds to get running if it has been dormant for a while.</p>
-          <br />
-          <a className='font-bold text-blue-500' href="https://tycoon2player.onrender.com/">Tycoon!</a>
-          <br />
-          <a className='font-bold text-blue-500' href="https://github.com/BritHD/Card-Client/">Frontend Source Code</a>
-          <br />
-          <a className='font-bold text-blue-500' href="https://github.com/BritHD/Card-Server/">Backend Source Code</a>
-          <br />
-          <br />
-          <div className="flex flex-wrap">
-            <Skill skill="ReactJs" />
-            <Skill skill="NodeJs" />
-            <Skill skill="Express" />
-            <Skill skill="SocketIO" />
-            <Skill skill="Javascript" />
-            <Skill skill="Render" />
-            <Skill skill="API" />
-          </div>
-        </div>
-      </div>
-      <div className="md:flex md:justify-center">
-        <img className='size-full md:w-1/3 m-5' src={Monster} alt="A game with rpg elements" />
-        <div className='md:w-1/3 m-5'>
-          <p className="font-bold text-4xl my-[20px] text-center" >Short RPG with Twine</p>
-          <p>A Twine project I made, it is based on how your choices can affect your game,
-            as well as a simple rpg-inspired battle mechanic more akin to a puzzle. You can play it in the link below</p>
-          <br />
-          <a className='font-bold text-blue-500' href={MonsterHTML}>A World With Monsters</a>
-          <br />
-          <br />
-          <div className="flex flex-wrap">
-            <Skill skill="Html" />
-            <Skill skill="Twine" />
-          </div>
-        </div>
-      </div>
-      <div className="md:flex md:justify-center">
-        <img className='size-full md:w-1/3 m-5' src={Network} alt="A website with network graphs" />
-        <div className='md:w-1/3 m-5'>
-          <p className="font-bold text-4xl my-[20px] text-center" >Networkx on HTML</p>
-          <p>A simple website that you can use to make network graphs. This is made with React, and a backend of Django to use python&apos;s Networkx library. This website was formerly deployed using AWS EC2 and S3.
-            This is not hosted anymore due to AWS costs, but you can still view the document on the process.</p>
-          <br />
-          <a className='font-bold text-blue-500' href={NetworkPDF}>Documentation PDF</a>
-          <br />
-          <a className='font-bold text-blue-500' href="https://github.com/BritHD/NetworkFront">Frontend Source Code</a>
-          <br />
-          <a className='font-bold text-blue-500' href="https://github.com/BritHD/NetworkServer">Backend Source Code</a>
-          <br />
-          <br />
-          <div className="flex flex-wrap">
-            <Skill skill="Html" />
-            <Skill skill="Javascript" />
-            <Skill skill="Django" />
-            <Skill skill="Python" />
-            <Skill skill="ReactJs" />
-            <Skill skill="AWS" />
-          </div>
-        </div>
-      </div>
-      <div className="md:flex md:justify-center">
-        <img className='size-full md:w-1/3 m-5' src={DrawNetwork} alt="A website with drawn network graphs you can make" />
-        <div className='md:w-1/3 m-5'>
-          <p className="font-bold text-4xl my-[20px] text-center" >Draw Networks on the Web</p>
-          <p>A simple website that you can use to draw network graphs yourself. This is made with React, and this website is deployed using Github Pages.
-            You can access the website with the link below.</p>
-          <br />
-          <a className='font-bold text-blue-500' href={'https://brithd.github.io/DrawNetwork/'}>Drawn Network Website</a>
-          <br />
-          <a className='font-bold text-blue-500' href={'https://github.com/BritHD/DrawNetwork'}>Website Source Code</a>
-          <br />
-          <br />
-          <div className="flex flex-wrap">
-            <Skill skill="Html" />
-            <Skill skill="Javascript" />
-            <Skill skill="ReactJs" />
-          </div>
+
+        <div className="flex flex-col gap-1 mt-2">
+          {project.links.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500 hover:underline"
+            >
+              {link.label}
+            </a>
+          ))}
         </div>
       </div>
     </div>
-  )
+  );
+}
+
+function Projects() {
+  return (
+    <section id="projects" className="py-20 px-4 bg-gray-50">
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center space-y-4 mb-12">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">
+            Featured Projects
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            A showcase of my work in software engineering and game design
+          </p>
+        </div>
+        <div className="flex flex-col gap-6">
+          {projects.map((project) => (
+            <ProjectCard key={project.title} project={project} />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 }
 
 export default Projects
