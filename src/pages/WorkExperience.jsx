@@ -1,10 +1,18 @@
 import Skill from "../components/Skill"
 
 const experiences = [
+    {
+    title: "Frontend Engineer",
+    company: "Cliqk",
+    period:"November 2025 - Current",
+    achievments: ["Designed user interface and branding assets with Figma", "Convert designs into functional, interactable user interfaces using Html + TypeScript"],
+    skills: ["Figma", "React", "Javascript", "HTML", "Typescript"],
+    link: "https://mycliqk.com"
+  },
   {
     title: "UI/UX & Full Stack Developer Internship",
     company: "Campus Collect",
-    period:"September 2024 - Current",
+    period:"September 2024 - November 2025",
     achievments: ["Led development of a student marketplace mobile app, launched to the App Store in 6 months", 
       "Designed UI/UX with Figma, improving user interaction and retention",
       "Developed full-stack architecture with React Native, Firebase, and Expo, achieving 30% faster performance than previous stack",
