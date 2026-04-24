@@ -4,7 +4,7 @@ const experiences = [
     {
     title: "Frontend Engineer",
     company: "Cliqk",
-    period:"November 2025 - Current",
+    period:"November 2025 - March 2026",
     achievments: ["Designed user interface and branding assets with Figma", "Convert designs into functional, interactable user interfaces using Html + TypeScript"],
     skills: ["Figma", "React", "Javascript", "HTML", "Typescript"],
     link: "https://mycliqk.com"
